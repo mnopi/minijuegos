@@ -13,21 +13,23 @@
   <code>audio_stop_music();
 
 draw_texture_flush();
-
+ads_disable(1);
+ads_enable(0,0,0);
 draw_sprite(spr_mundo_algodon, 0, 0, 0);
 draw_sprite(spr_boton_vacio, 0, 0, 0);
-ads_disable(1);
-/*if(os_type == os_ios)
-    {
-    ads_enable(0,0,0);
-    }else if(os_type == os_android)
-    {
-    ads_enable(0,0,3);
-    }*/
-ads_enable(0,0,0);
-//ads_enable(0,0,3);
-if ads_interstitial_available()
-    ads_interstitial_display();</code>
+//show_message("no disponible");
+//
+
+//ads_enable(0,0,0);
+/*if ads_interstitial_available()
+{
+    show_message("diponible");
+}
+else
+{
+show_message("no disponible");
+}*/
+//ads_enable(0,0,3);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <makerSettings>

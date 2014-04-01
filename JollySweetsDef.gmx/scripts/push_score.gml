@@ -18,6 +18,7 @@ if os_is_network_connected()
                 {
                
                 achievement_post_score(argument0, argument1);
+             
               
                 }
         }

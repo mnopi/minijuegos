@@ -65,7 +65,7 @@ switch(room){
         draw_text(289,460,string_localize(language,"About"));
         draw_text(516,460,string_localize(language,"Help"));
         draw_text(738,460,string_localize(language,"Options"));
-      //  draw_text(898,646,string_localize(language,"Rate"));
+        draw_text(898,646,string_localize(language,"Rate"));
         break;
     }
     case 1:
@@ -220,6 +220,7 @@ switch(room){
     }
 
 }
+
 
 </string>
           </argument>

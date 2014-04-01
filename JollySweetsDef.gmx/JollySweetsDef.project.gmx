@@ -76,6 +76,7 @@
       <sprite>sprites\boton_salto</sprite>
       <sprite>sprites\boton_dcha</sprite>
       <sprite>sprites\boton_izqda</sprite>
+      <sprite>sprites\podio</sprite>
     </sprites>
     <sprites name="Enemigos">
       <sprite>sprites\spr_disparo_gel</sprite>
@@ -108,6 +109,7 @@
     <sprites name="Elementos control">
       <sprite>sprites\spr_puntos_pause</sprite>
       <sprite>sprites\spr_skull</sprite>
+      <sprite>sprites\game_center_icon</sprite>
     </sprites>
     <sprites name="Menú de selecion de mundo y nivel">
       <sprites name="1">
@@ -311,6 +313,7 @@
       <object>objects\obj_back</object>
       <object>objects\obj_punt_menu</object>
       <object>objects\obj_iap</object>
+      <object>objects\game_center</object>
     </objects>
     <objects name="Puertas">
       <object>objects\obj_puerta</object>
