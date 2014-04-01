@@ -93,7 +93,7 @@ switch(room){
         draw_set_valign(1);
         draw_set_color($8dc696);
         draw_set_font(font4);
-        draw_text_transformed(528,332,string_localize(language,"Loading"),1,1,-15)
+       draw_text_transformed(528,332,string_localize(language,"Loading"),1,1,-15)
         break;
     }
      case 5:

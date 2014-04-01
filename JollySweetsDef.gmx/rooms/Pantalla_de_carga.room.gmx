@@ -12,6 +12,15 @@
   <showcolour>0</showcolour>
   <code>ads_disable(1);
 ads_enable(0,0,0);
+show_debug_message("aa");
+
+audio_stop_music();
+
+//draw_texture_flush();
+
+//draw_sprite(spr_mundo_algodon, 0, 0, 0);
+//draw_sprite(spr_boton_vacio, 0, 0, 0);
+
 if ads_interstitial_available()
    {
    show_message("odio infinito");
@@ -19,13 +28,6 @@ if ads_interstitial_available()
     }
 else
     show_message("jo");
-
-audio_stop_music();
-
-draw_texture_flush();
-
-draw_sprite(spr_mundo_algodon, 0, 0, 0);
-draw_sprite(spr_boton_vacio, 0, 0, 0);
 //show_message("no disponible");
 //
 
