@@ -29,6 +29,8 @@
 
 if (sound)
     audio_play_sound(snd_button,1,false);
+
+
 </string>
           </argument>
         </arguments>

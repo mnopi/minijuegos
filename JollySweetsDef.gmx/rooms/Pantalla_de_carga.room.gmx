@@ -10,11 +10,20 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>0</showcolour>
-  <code>audio_stop_music();
+  <code>ads_disable(1);
+ads_enable(0,0,0);
+if ads_interstitial_available()
+   {
+   show_message("odio infinito");
+    ads_interstitial_display();
+    }
+else
+    show_message("jo");
+
+audio_stop_music();
 
 draw_texture_flush();
-ads_disable(1);
-ads_enable(0,0,0);
+
 draw_sprite(spr_mundo_algodon, 0, 0, 0);
 draw_sprite(spr_boton_vacio, 0, 0, 0);
 //show_message("no disponible");
