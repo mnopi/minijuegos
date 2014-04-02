@@ -314,6 +314,7 @@
       <object>objects\obj_punt_menu</object>
       <object>objects\obj_iap</object>
       <object>objects\game_center</object>
+      <object>objects\obj_inter_ads</object>
     </objects>
     <objects name="Puertas">
       <object>objects\obj_puerta</object>

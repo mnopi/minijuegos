@@ -49,14 +49,24 @@ gui_height=480
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var sound = global.sound;
-display_set_gui_size(gui_width,gui_height);
-if (display_get_height() &gt;= 520)
-    ads_enable(0,gui_height-66,1);
-else
-    ads_enable(0,gui_height-75,1);
+            <string>if(os_type == os_ios)
+{
+    ads_enable(0,0,0);
+}else 
+{
 
-//ads_enable(0,0,0);
+    if (display_get_height() &gt;= 520)
+        ads_enable(0,gui_height-66,1);
+    else
+        ads_enable(0,gui_height-75,1);
+}
+
+
+var sound = global.sound;
+display_set_gui_size(gui_width,gui_height);
+
+
+
 </string>
           </argument>
         </arguments>
