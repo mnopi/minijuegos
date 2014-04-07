@@ -553,6 +553,7 @@ if (sound)
     <instance objName="gelatinaDI" x="4512" y="1280" name="inst_BE6607E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="gelatina_DD" x="5568" y="352" name="inst_94352072" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_flor_D" x="5376" y="1536" name="inst_59874FB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_load_leaderboard" x="160" y="1568" name="inst_8C4A3FBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

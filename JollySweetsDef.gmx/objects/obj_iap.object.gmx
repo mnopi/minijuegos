@@ -32,21 +32,97 @@ repeat(ds_queue_size(queue)) // For each changed transaction
    next = ds_queue_dequeue(queue); //Check the next purchase in the list
    if next == 0
       {
-      if iap_is_purchased("10101")
+      if iap_is_purchased("noads")
          {
          global.ads = false;
          global.purchased = true;
          ads_disable(0);
-         //show_message_async(string_localize(language,"Thank you for your purchase"));
-         room_goto(2);
-         /*ini_open("SaveGame.sav");
-         ini_write_real("Purchases","Bought",true);
-         ini_close();*/
-         //Add further code to notify the user, save to ini, reactivate the game instances etc...
+         ads_disable(1);
+         if (os_type == os_ios)
+         {
+          
+            ini_open("SaveGame.sav");
+            
+            ini_write_real("BUY", "BUY", 1);
+            ini_close();
+         }
+        
          }
       }
    //You may want to add additional checks here for other purchases if you have them
    }  
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.ads = true;
+if(os_type != os_ios)
+{ 
+    purchaseList = ds_list_create();
+    
+    purchaseNoAds = ds_map_create();
+    ds_map_add(purchaseNoAds,"id","noads");
+    ds_map_add(purchaseNoAds,"title","No Ads");
+    
+    ds_list_add(purchaseList,purchaseNoAds);
+    
+    iap_activate(purchaseList);
+    
+    ds_map_destroy(purchaseNoAds);
+    ds_list_destroy(purchaseList);
+    
+    iap_restore_all();
+
+    if(!iap_is_purchased("noads"))
+    {
+     
+        global.ads = true;
+        
+    }
+    else
+    {
+       
+        global.ads = false;
+        
+        instance_destroy();
+    }
+}else
+{
+    ini_open("SaveGame.sav");   
+    
+    var noads =  ini_read_real("BUY","BUY",0);
+    if (noads == 1)
+    {  
+        global.ads = false;
+        
+    }else
+    {
+         
+         global.ads = true;
+    }
+    
+    ini_close();
+
+}
+
 </string>
           </argument>
         </arguments>

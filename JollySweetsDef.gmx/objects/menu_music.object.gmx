@@ -49,16 +49,20 @@ gui_height=480
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(os_type == os_ios)
+            <string>var ads = global.ads;
+if(ads)
 {
-    ads_enable(0,0,0);
-}else 
-{
-
-    if (display_get_height() &gt;= 520)
-        ads_enable(0,gui_height-66,1);
-    else
-        ads_enable(0,gui_height-75,1);
+    if(os_type == os_ios)
+    {
+        ads_enable(0,0,0);
+    }else 
+    {
+    
+        if (display_get_height() &gt;= 520)
+            ads_enable(0,gui_height-66,1);
+        else
+            ads_enable(0,gui_height-75,1);
+    }
 }
 
 

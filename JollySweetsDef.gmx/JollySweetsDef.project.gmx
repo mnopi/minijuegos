@@ -204,6 +204,8 @@
     <script>scripts\push_score.gml</script>
     <script>scripts\cotton_candy_level_selector.gml</script>
     <script>scripts\level_ended.gml</script>
+    <script>scripts\get_leaderboard_id.gml</script>
+    <script>scripts\push_achievement.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font1</font>
@@ -315,6 +317,8 @@
       <object>objects\obj_iap</object>
       <object>objects\game_center</object>
       <object>objects\obj_inter_ads</object>
+      <object>objects\obj_Facebook_Init</object>
+      <object>objects\obj_load_leaderboard</object>
     </objects>
     <objects name="Puertas">
       <object>objects\obj_puerta</object>

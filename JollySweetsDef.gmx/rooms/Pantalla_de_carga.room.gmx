@@ -10,17 +10,23 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>0</showcolour>
-  <code>if(os_type != os_ios)
-{
-ads_disable(1);
-ads_enable(0,0,0);
-}
+  <code>var ads = global.ads;
 
-if ads_interstitial_available()
-   {
-  
-    ads_interstitial_display();
+if(ads)
+{
+    if(os_type != os_ios)
+    {
+    ads_disable(1);
+    ads_enable(0,0,0);
     }
+    
+    
+    if ads_interstitial_available()
+       {
+      
+        ads_interstitial_display();
+        }
+}
 audio_stop_music();
 
 draw_texture_flush();

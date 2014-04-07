@@ -540,6 +540,7 @@ if (sound)
     <instance objName="obj_plat_alg2" x="4064" y="3072" name="inst_0AF60753" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_touch_controls" x="96" y="0" name="inst_385AA00A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="gelatinaDI" x="1504" y="2208" name="inst_F0A257AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_load_leaderboard" x="192" y="3488" name="inst_C26DBC09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -30,12 +30,11 @@ var time;
 var language = global.language;
 
 ini_open("SaveGame.sav");
-for (i = 0; i&lt;9; i++)
+for (var i = 0; i&lt;9; i++)
 {
     p[i] = ini_read_real("Score", "Beans level "+string(i), 0);
     time[i] =  ini_read_real("Time", "Beans level "+string(i), 0);
 }
-
 ini_close();
 
 draw_set_halign(1);

@@ -603,6 +603,7 @@ if (sound)
     <instance objName="obj_touch_controls" x="160" y="64" name="inst_FF1DD459" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_muerte_caida" x="416" y="2368" name="inst_7821FDAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_muerte_caida" x="2464" y="3072" name="inst_6DF04379" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_load_leaderboard" x="128" y="288" name="inst_C76D1926" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

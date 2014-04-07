@@ -1,4 +1,4 @@
-global.grajeas = score;
+    global.grajeas = score;
 var google_leaderboards;
 google_leaderboards[0]= "CgkI78705N4VEAIQEg";
 google_leaderboards[1]= "CgkI78705N4VEAIQEw";
@@ -9,6 +9,7 @@ google_leaderboards[5]= "CgkI78705N4VEAIQFw";
 google_leaderboards[6]= "CgkI78705N4VEAIQGA";
 google_leaderboards[7]= "CgkI78705N4VEAIQGQ";
 google_leaderboards[8]= "CgkI78705N4VEAIQGg";
+
 
 
 
@@ -59,6 +60,64 @@ if(c_time ==0 || time_in_seconds <= c_time)
         }
      }
 }
+
+switch(level)
+{
+    case 0:
+    {
+     
+       
+       push_achievement("CgkI78705N4VEAIQAw");
+     
+     break;
+    }
+    case 2:
+    {
+     
+       
+        push_achievement("CgkI78705N4VEAIQBA");
+     
+     break;
+    }
+    case 5:
+    {
+     
+        
+        push_achievement("CgkI78705N4VEAIQBQ");
+     
+     break;
+    }
+    case 8:
+    {
+    
+       
+       push_achievement("CgkI78705N4VEAIQBg");
+     
+     break;
+    }
+}
+
+var beans = 0;
+for (var l = 0; l<9; l++)
+{
+    beans += ini_read_real("Score", "Beans level "+string(l), 0);
+    
+}
+if(beans >= 450 && beans <900)
+{
+ 
+     push_achievement("CgkI78705N4VEAIQBw");
+     
+}
+
+if(beans == 900)
+{
+    
+     push_achievement("CgkI78705N4VEAIQHQ");
+     
+}
+
+
 
 if (room > number)
 {

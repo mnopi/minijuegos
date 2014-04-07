@@ -57,6 +57,7 @@ var language = global.language;
 switch(room){
     case 0:
     {
+        var ads = global.ads;
         draw_set_halign(1);
         draw_set_valign(1);
         draw_set_font(font2);
@@ -64,8 +65,18 @@ switch(room){
         draw_text(507,335,string_localize(language,"Play"));
         draw_text(289,460,string_localize(language,"About"));
         draw_text(516,460,string_localize(language,"Help"));
-        draw_text(738,460,string_localize(language,"Options"));
-        draw_text(898,646,string_localize(language,"Rate"));
+        draw_text(738,460,string_localize(language,"Options"));              
+        draw_text(289,335,string_localize(language,"Rate"));
+        var ad = global.ads;
+        if(ad)
+        {
+        draw_text(898,646,string_localize(language,"Buy")); 
+        obj_boton_purchase.visible=true;
+        }else
+        {
+            obj_boton_purchase.visible=false;
+        }
+
         break;
     }
     case 1:
