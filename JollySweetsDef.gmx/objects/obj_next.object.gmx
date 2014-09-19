@@ -34,28 +34,16 @@ if (sound)
 
 switch (current_room)
 {
-    case 11:
-        //global.roomNumber = 12;
-        if (level &lt; 12)
-            room_goto(niveles_chocolate_2); 
-        else
-            room_goto(niveles_chocolate_3); 
-    break;
+    case 11:    
     case 12:
         //global.roomNumber = 13;
             room_goto(niveles_chocolate_3);
     break;
     case 13:
         //global.roomNumber = 21;
-            room_goto(Segunda_pantalla_de_inicio2);
+            room_goto(Segunda_pantalla_de_inicio3);
     break;
-    case 17:
-        //global.roomNumber = 22;
-        if (level &lt; 18)
-            room_goto(niveles_caramelo_2); 
-        else
-            room_goto(niveles_caramelo_3); 
-    break;
+    case 17:  
     case 18:
         //global.roomNumber = 23;
         room_goto(niveles_caramelo_3);
@@ -64,13 +52,7 @@ switch (current_room)
         //global.roomNumber = 31;
         room_goto(Segunda_pantalla_de_inicio3);
     break;
-    case 23:
-        //global.roomNumber = 32;
-        if (level &lt; 24)
-            room_goto(niveles_algodon_2); 
-        else
-            room_goto(niveles_algodon_3); 
-    break;
+    case 23:  
     case 24:
         //global.roomNumber = 33;
         room_goto(niveles_algodon_3);

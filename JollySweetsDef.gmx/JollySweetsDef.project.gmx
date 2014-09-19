@@ -77,6 +77,9 @@
       <sprite>sprites\boton_dcha</sprite>
       <sprite>sprites\boton_izqda</sprite>
       <sprite>sprites\podio</sprite>
+      <sprite>sprites\sound_sprite</sprite>
+      <sprite>sprites\nosound</sprite>
+      <sprite>sprites\btn_play_menu</sprite>
     </sprites>
     <sprites name="Enemigos">
       <sprite>sprites\spr_disparo_gel</sprite>
@@ -264,6 +267,7 @@
       <object>objects\obj_boton_right</object>
       <object>objects\obj_boton_rate</object>
       <object>objects\obj_boton_purchase</object>
+      <object>objects\obj_boton_sound</object>
     </objects>
     <objects name="Enemigos">
       <object>objects\object32</object>

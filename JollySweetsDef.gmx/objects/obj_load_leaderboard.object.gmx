@@ -81,7 +81,7 @@ var ident = ds_map_find_value(async_load, "id");
           <argument>
             <kind>1</kind>
             <string>global.numentries =-1;
-if(os_is_network_connected()&amp;&amp; achievement_login_status()  &amp;&amp; achievement_available() &amp;&amp; ( os_type == os_android ||  os_type == os_ios ))
+if(os_is_network_connected()&amp;&amp; achievement_login_status()  &amp;&amp; achievement_available() &amp;&amp; ( os_type == os_ios ))
     {
     
     

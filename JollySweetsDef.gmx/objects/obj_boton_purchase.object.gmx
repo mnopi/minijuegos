@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_play_vacio</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -66,6 +66,8 @@ else
           <argument>
             <kind>1</kind>
             <string>var language = global.language;
+ if (os_is_network_connected())
+     {
 if(os_type == os_ios)
 { 
     var ads = global.ads;
@@ -115,6 +117,7 @@ else
     show_message_async(string_localize(language,"The store is not available. Please try again"));
    //the store is not available so do some error handling here...
    }
+}
 }
 </string>
           </argument>

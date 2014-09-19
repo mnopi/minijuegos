@@ -19,7 +19,7 @@
     <option_android_arch_mipsr2>false</option_android_arch_mipsr2>
     <option_android_arch_mipsr2sf>false</option_android_arch_mipsr2sf>
     <option_android_arch_x86>False</option_android_arch_x86>
-    <option_android_build_version>12</option_android_build_version>
+    <option_android_build_version>14</option_android_build_version>
     <option_android_color_depth>0</option_android_color_depth>
     <option_android_display_name>Jolly Sweets</option_android_display_name>
     <option_android_flurry_enable>0</option_android_flurry_enable>
@@ -90,7 +90,7 @@
     <option_html5_CreationEventOrder>true</option_html5_CreationEventOrder>
     <option_html5_WebGL>0</option_html5_WebGL>
     <option_html5_advertising_enable>0</option_html5_advertising_enable>
-    <option_html5_advertising_key>ca-app-pub-9006336585437783/4524179752|5|ca-app-pub-9006336585437783/9316672552|0|</option_html5_advertising_key>
+    <option_html5_advertising_key>156455|5|</option_html5_advertising_key>
     <option_html5_advertising_type>Supersonic Ads</option_html5_advertising_type>
     <option_html5_allow_fullscreen>True</option_html5_allow_fullscreen>
     <option_html5_alwaysreload>False</option_html5_alwaysreload>
@@ -114,17 +114,17 @@
     <option_html5_use_test_ads>0</option_html5_use_test_ads>
     <option_html5_usesplash>False</option_html5_usesplash>
     <option_icon>nil</option_icon>
-    <option_in_app_purchase_enable>-1</option_in_app_purchase_enable>
-    <option_in_app_purchase_sandbox_mode>-1</option_in_app_purchase_sandbox_mode>
+    <option_in_app_purchase_enable>0</option_in_app_purchase_enable>
+    <option_in_app_purchase_sandbox_mode>0</option_in_app_purchase_sandbox_mode>
     <option_in_app_purchase_server_url></option_in_app_purchase_server_url>
     <option_information></option_information>
     <option_interpolate>True</option_interpolate>
     <option_ios_adcolony_enable_V4VC>0</option_ios_adcolony_enable_V4VC>
     <option_ios_advertising_enable>-1</option_ios_advertising_enable>
-    <option_ios_advertising_key>ca-app-pub-9006336585437783/4524179752|5|ca-app-pub-9006336585437783/9316672552|0|</option_ios_advertising_key>
-    <option_ios_advertising_type>Admob</option_ios_advertising_type>
+    <option_ios_advertising_key>156455|5|</option_ios_advertising_key>
+    <option_ios_advertising_type>Millennial Media</option_ios_advertising_type>
     <option_ios_app_id>com.mnopi.jollysweets</option_ios_app_id>
-    <option_ios_build_version>42</option_ios_build_version>
+    <option_ios_build_version>4</option_ios_build_version>
     <option_ios_certificate>iPhone Developer: Michel Barbou (8D595BJ557)</option_ios_certificate>
     <option_ios_device_type>3</option_ios_device_type>
     <option_ios_display_name>Jolly Sweets</option_ios_display_name>
@@ -157,7 +157,7 @@
     <option_ios_orient_portrait_upside_down>0</option_ios_orient_portrait_upside_down>
     <option_ios_provisioning>iOS Team Provisioning Profile: * - *</option_ios_provisioning>
     <option_ios_push_enable>0</option_ios_push_enable>
-    <option_ios_set_device_id>9D51B7EBA6CC26AD34C31C8193B3740E</option_ios_set_device_id>
+    <option_ios_set_device_id></option_ios_set_device_id>
     <option_ios_splash_png>Configs\Default\ios\splash.png</option_ios_splash_png>
     <option_ios_texture_page>1024</option_ios_texture_page>
     <option_ios_use_test_ads>0</option_ios_use_test_ads>

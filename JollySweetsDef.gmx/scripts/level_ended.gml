@@ -68,6 +68,7 @@ switch(level)
      
        
        push_achievement("CgkI78705N4VEAIQAw");
+       push_achievement("CgkI78705N4VEAIQHw");
      
      break;
     }
@@ -76,22 +77,28 @@ switch(level)
      
        
         push_achievement("CgkI78705N4VEAIQBA");
+        push_achievement("CgkI78705N4VEAIQIA");
      
      break;
+    }
+    case 4:
+    {
+        push_achievement("CgkI78705N4VEAIQIg");
     }
     case 5:
     {
      
         
         push_achievement("CgkI78705N4VEAIQBQ");
+        push_achievement("CgkI78705N4VEAIQIQ");
      
      break;
     }
     case 8:
-    {
-    
+    {   
        
        push_achievement("CgkI78705N4VEAIQBg");
+       push_achievement("CgkI78705N4VEAIQIw");
      
      break;
     }
@@ -103,7 +110,7 @@ for (var l = 0; l<9; l++)
     beans += ini_read_real("Score", "Beans level "+string(l), 0);
     
 }
-if(beans >= 450 && beans <900)
+if(beans >= 450)
 {
  
      push_achievement("CgkI78705N4VEAIQBw");
@@ -119,11 +126,11 @@ if(beans == 900)
 
 
 
-if (room > number)
+/*if (room > number)
 {
     global.level = room;
     ini_write_real("Levels","Number",room);
-}
+}*/
 
 ini_close();
 

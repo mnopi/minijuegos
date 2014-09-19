@@ -127,7 +127,7 @@ var text =  string_localize(language,"Time: ")+miliseconds_to_timestring(time_in
 
 var entries = global.numentries;
 
-if(entries &gt;0)
+if(entries &gt;=0)
 {
     var current=0;
     var i =0;
@@ -145,14 +145,15 @@ if(entries &gt;0)
         text+="|Ranking: "+string(i+1);
     }else
     {
-     text+="      ";
+      text+="   ";
     }
 
 }else
 {
-    text+="      ";
+    text+="   ";
 }
-draw_text(250,400,text );
+
+draw_text(230,400,text);
 </string>
           </argument>
         </arguments>

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var next, queue;
+            <string>/*var next, queue;
 queue = iap_event_queue(); // Get the current state of changed IAP transactions
 repeat(ds_queue_size(queue)) // For each changed transaction
    {
@@ -50,7 +50,7 @@ repeat(ds_queue_size(queue)) // For each changed transaction
          }
       }
    //You may want to add additional checks here for other purchases if you have them
-   }  
+   }  */
 </string>
           </argument>
         </arguments>
@@ -74,7 +74,7 @@ repeat(ds_queue_size(queue)) // For each changed transaction
           <argument>
             <kind>1</kind>
             <string>global.ads = true;
-if(os_type != os_ios)
+/*if(os_type != os_ios)
 { 
     purchaseList = ds_list_create();
     
@@ -93,13 +93,13 @@ if(os_type != os_ios)
 
     if(!iap_is_purchased("noads"))
     {
-     
+      
         global.ads = true;
         
     }
     else
     {
-       
+      
         global.ads = false;
         
         instance_destroy();
@@ -121,7 +121,7 @@ if(os_type != os_ios)
     
     ini_close();
 
-}
+}*/
 
 </string>
           </argument>

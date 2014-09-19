@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1018</width>
   <height>720</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -15,10 +15,11 @@ if ads_interstitial_available()
     ads_interstitial_display();*/
 
 ini_open("SaveGame.sav");
-global.level = ini_read_real("Levels","Number",0);
+global.level = 25;//ini_read_real("Levels","Number",0);
 //global.level = 25;
 global.purchased = true; //solo para depuración
 global.sound = ini_read_real("Settings","Sound",true);
+
 
             
          
@@ -26,7 +27,7 @@ global.sound = ini_read_real("Settings","Sound",true);
 ini_close();
 
 draw_texture_flush();
-
+global.ads = true;
 draw_sprite(spr_boton_vacio, 0, 0, 0);
 draw_sprite(spr_nube_1, 0, 0, 0);
 draw_sprite(spr_play_vacio, 0, 0, 0);
@@ -35,7 +36,19 @@ draw_sprite(inicio, 0, 0, 0);
 
 //instance_deactivate_object(obj_boton_rate);
 
-//ads_enable(0,0,0);</code>
+//ads_enable(0,0,0);
+
+  /*  if(os_type == os_ios)
+    {
+        ads_enable(0,0,0);
+    }else 
+    {
+    
+        if (display_get_height() &gt;= 520)
+            ads_enable(0,gui_height-66,1);
+        else
+            ads_enable(0,gui_height-75,1);
+    }*/</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <makerSettings>
@@ -80,18 +93,15 @@ draw_sprite(inicio, 0, 0, 0);
     <instance objName="obj_nube_3" x="544" y="32" name="inst_3D2386E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_nube_4" x="-64" y="160" name="inst_4E683D8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_nube_4" x="864" y="160" name="inst_86183E3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boton_about" x="288" y="464" name="inst_A0539019" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boton_ayuda" x="512" y="464" name="inst_5073F7DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boton_opciones" x="736" y="464" name="inst_61AAD335" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_princip" x="-32" y="0" name="inst_0CF21AEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boton_play" x="512" y="352" name="inst_AD1F15C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_back" x="208" y="16" name="inst_87FBA754" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="game_center" x="28" y="18" name="inst_A3402F89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_iap" x="80" y="128" name="inst_7860B759" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_princip" x="-36" y="5" name="inst_0CF21AEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_boton_play" x="400" y="295" name="inst_AD1F15C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_traductor_main" x="208" y="128" name="inst_FFFFE187" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="menu_music" x="80" y="16" name="inst_3FEB9AD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_back" x="208" y="16" name="inst_87FBA754" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boton_rate" x="288" y="352" name="inst_8B5118CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="game_center" x="626" y="294" name="inst_A3402F89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_boton_purchase" x="896" y="656" name="inst_8040E4FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_iap" x="80" y="128" name="inst_7860B759" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_boton_rate" x="882" y="78" name="inst_26E7AC73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_boton_sound" x="772" y="582" name="inst_77125E4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
