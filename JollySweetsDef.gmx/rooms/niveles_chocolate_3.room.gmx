@@ -17,6 +17,7 @@ draw_sprite(spr_torre_chocolate,0,0,0);
 draw_sprite(Fondo_2_menu,0,0,0);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
+  <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>0</isSet>
     <w>0</w>
