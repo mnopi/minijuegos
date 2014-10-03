@@ -19,6 +19,7 @@ draw_sprite(Fondo_2_menu,0,0,0);
 //ads_enable(0,401,1);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
+  <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>0</isSet>
     <w>0</w>

@@ -27,7 +27,7 @@ if(ads)
         ads_interstitial_display();
         }
 }
-audio_stop_music();
+audio_stop_all();
 
 draw_texture_flush();
 
@@ -50,6 +50,7 @@ show_message("no disponible");
 //ads_enable(0,0,3);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
+  <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>0</isSet>
     <w>0</w>

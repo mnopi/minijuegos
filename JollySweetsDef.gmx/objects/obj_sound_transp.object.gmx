@@ -76,7 +76,7 @@ ini_close();
           <argument>
             <kind>1</kind>
             <string>//audio_pause_music();
-audio_stop_music();
+audio_stop_sound(msc_menu);
 </string>
           </argument>
         </arguments>
@@ -126,7 +126,7 @@ audio_stop_music();
           <argument>
             <kind>1</kind>
             <string>//audio_resume_music();
-audio_play_music(msc_menu,true);
+audio_play_sound(msc_menu,1,true);
 </string>
           </argument>
         </arguments>

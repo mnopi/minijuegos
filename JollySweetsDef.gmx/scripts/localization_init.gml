@@ -32,4 +32,3 @@
     if (global.language!="en" && global.language!="es" && global.language!="pt-br") { // This is where we check if the user's language is supported.
         global.language=global.language_native; // The user's language isn't supported, so just use the one most familiar to us.
     }
-

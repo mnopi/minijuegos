@@ -16,11 +16,12 @@ draw_texture_flush();
 
 draw_sprite(spr_es,0,0,0);
 draw_sprite(game_over_bg,0,0,0);
-
+audio_stop_all();
 if (sound)
-    audio_play_music(snd_gameover, false);</code>
+    audio_play_sound(snd_gameover,1, false);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
+  <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>0</isSet>
     <w>0</w>

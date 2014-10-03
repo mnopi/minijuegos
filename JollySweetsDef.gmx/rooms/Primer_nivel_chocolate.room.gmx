@@ -21,9 +21,13 @@ draw_sprite(chocolate_1,0,0,0);
 
 var sound = global.sound;
 if (sound)
-    audio_play_music(msc_lv1,true);</code>
+{
+    
+    audio_play_sound(msc_lv1,1,true);
+    }</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
+  <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>0</isSet>
     <w>0</w>

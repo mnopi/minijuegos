@@ -2,7 +2,7 @@
 <sound>
   <kind>0</kind>
   <extension>.wav</extension>
-  <origname>C:\Jolly Sweets - Samsung.gmx\\sound\audio\msc_lv1.wav</origname>
+  <origname>sound\audio\msc_lv1.wav</origname>
   <effects>0</effects>
   <volume>
     <volume>1</volume>
